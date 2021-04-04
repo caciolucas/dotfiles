@@ -4,19 +4,19 @@ font:
   size: 12
   # The normal (roman) font face to use.
   normal:
-    family: Hurmit Nerd Font
+    family: Monaco
     # Style can be specified to pick a specific face.
     style: Regular
 
   # The bold font face
   bold:
-    family: Hurmit Nerd Font
+    family: Monaco
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: Hurmit Nerd Font
+    family: Monaco
     # Style can be specified to pick a specific face.
     style: Italic
 window:
@@ -24,7 +24,7 @@ window:
     x: 5
     y: 5
 # Colors (Horizon Dark)
-background_opacity: 0.7
+background_opacity: 0.9
 colors:
   # Primary colors
   primary:
@@ -55,23 +55,41 @@ colors:
   #   white: '0xd5d8da'
 
   # Normal colors
-  normal:
-    black: '#111111'
-    red: '#4bc98a'
-    green: '#4bc98a'
-    yellow: '#4bc98a'
-    blue: '#4bc98a'
-    magenta: '#4bc98a'
-    cyan: '#4bc98a'
-    white: '#d5d8da'
+  #normal:
+  #  black: '#2c373d'
+  #  red: '#a67979'
+  #  green: '#809f7b'
+  #  yellow: '#baad8a'
+  #  blue: '#6d7575'
+  #  magenta: '#8e7d79'
+  #  cyan: '#7b9899'
+  #  white: '#c4c0bb'
+  #
+  #bright:
+  #  red: '#ea8a8a'
+  #  green: '#99e08d'
+  #  yellow: '#ffea9e'
+  #  blue: '#7fa6a6'
+  #  magenta: '#c9978c'
+  #  cyan: '#8ed6d8'
+  #  white: '#fffcf5'
 
-  # Bright colors
+  normal:
+    black: '#263741'
+    red: '#b44949'
+    green: '#74ad6d'
+    yellow: '#cab378'
+    blue: '#617f7f'
+    magenta: '#9a736b'
+    cyan: '#6da4a5'
+    white: '#d6c2a7'
+  
   bright:
-    black: '#222222'
-    red: '#4bc98a'
-    green: '#4bc98a'
-    yellow: '#4bc98a'
-    blue: '#4bc98a'
-    magenta: '#4bc98a'
-    cyan: '#4bc98a'
-    white: '#d5d8da'
+    black: '#385360'
+    red: '#fc7676'
+    green: '#8bf279'
+    yellow: '#fff689'
+    blue: '#6fb4b4'
+    magenta: '#d98b7a'
+    cyan: '#7ce6e8'
+    white: '#ffffdb'

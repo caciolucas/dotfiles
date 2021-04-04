@@ -14,7 +14,7 @@ BROWSER=/usr/bin/google-chrome-stable
 # ZSH_THEME="marcospb19"
 # ZSH_THEME="darkblood"
 # ZSH_THEME="duellj"
-ZSH_THEME="caciolucas"
+ZSH_THEME="gallois"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -110,4 +110,5 @@ alias tree="exa -T -a -L"
 alias tb="taskbook"
 
 # neofetch
+echo
 neofetch --ascii_distro manjaro_small --disable CPU --disable GPU --disable Memory --disable Icons --disable Theme --disable Resolution --disable Packages --disable Kernel

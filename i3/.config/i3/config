@@ -54,7 +54,8 @@ bindsym $mod+Shift+q kill
 # start program launcher
 # bindsym $mod+d exec --no-startup-id dmenu_recency
 # bindsym $mod+r exec --no-startup-id dmenu_recency
-bindsym $mod+r exec --no-startup-id rofi -show drun
+# bindsym $mod+r exec --no-startup-id rofi -show drun
+bindsym $mod+r exec --no-startup-id sh ~/.config/polybar/scripts/launcher.sh &
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -84,7 +85,7 @@ bindsym $mod+F4 exec pcmanfm
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill picom
-bindsym $mod+Ctrl+t exec --no-startup-id picom -b
+bindsym $mod+Ctrl+t exec --no-startup-id picom --experimental-backends
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -276,7 +277,7 @@ mode "$mode_system" {
 
 # Resize window (you can also use the mouse for that)
 # bindsym $mod+r mode "resize"
-bindsym $mod+d mode "resize"
+# bindsym $mod+d mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.
@@ -308,7 +309,7 @@ exec_always --no-startup-id picom --experimental-backends
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id nitrogen --restore; sleep 1;
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -395,18 +396,27 @@ bindsym $mod+m exec --no-startup-id polybar-msg cmd toggle
 #   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 #  client.background       #2B2C2B
 
-# set $yl #fdbb69
-set $yl #4bc98a
-set $gr2 #90e0b8
-# set $yl #46b9d6
-set $bl #111111
-set $gr #222222
+# # set $yl #fdbb69
+# set $yl #4bc98a
+# set $gr2 #90e0b8
+# # set $yl #46b9d6
+# set $bl #111111
+# set $gr #222222
+
+set $bl #385360
+set $rd #fc7676
+set $gr #8bf279
+set $yl #fff689
+set $bu #6fb4b4
+set $mg #d98b7a
+set $cy #7ce6e8
+set $wh #ffffdb
 
 # class                 border  bground text    indicator child_border
-client.focused          $yl     $yl     $bl     $gr2       $yl
+client.focused          $mg     $mg     $bl     $wh      $mg
 client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
 client.unfocused        #333333 #222222 #888888 #292D2E   #222222
-client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.urgent           #2F343A $rd     #FFFFFF $rd       $rd
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 client.background       #FFFFFF
 
