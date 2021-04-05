@@ -11,8 +11,9 @@ if xrandr | grep -q "HDMI1 connected primary 1920x1080"; then
     polybar main &
     #polybar top &
 else
-    polybar botvertical &
-    polybar topvertical &
+    polybar main &
+    # polybar botvertical &
+    # polybar topvertical &
 fi
 
 echo "Polybar launched..."

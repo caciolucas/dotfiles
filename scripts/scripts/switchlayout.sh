@@ -7,4 +7,4 @@ else
     source ~/scripts/layout.sh
 fi
 
-source ~/scripts/setwallpaper.sh
+#source ~/scripts/setwallpaper.sh
