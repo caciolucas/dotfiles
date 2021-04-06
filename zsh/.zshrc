@@ -108,6 +108,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias tree="exa -T -a -L"
 alias tb="taskbook"
-
+alias py="python"
 # neofetch
 neofetch --ascii_distro manjaro_small --disable CPU --disable GPU --disable Memory --disable Icons --disable Theme --disable Resolution --disable Packages --disable Kernel
