@@ -4,7 +4,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/caciolucas/.oh-my-zsh"
 
-BROWSER=/usr/bin/google-chrome-stable
+export BROWSER=/usr/bin/google-chrome-stable
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/home/caciolucas/pycharm-community-2021.1/bin"
+export PATH="$PATH:/home/caciolucas/.pyenv/bin"
+
+eval "$(pyenv init -)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

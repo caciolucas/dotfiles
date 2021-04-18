@@ -18,6 +18,7 @@ font pango: sans 10
 for_window [title="."] border pixel 1
 #for_window [class="Alacritty"] border normal
 for_window [class="jetbrains-studio"] floating enable
+for_window [title=".*Android Emulator.*"] floating enable
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
