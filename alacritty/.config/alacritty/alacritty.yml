@@ -2,6 +2,10 @@
 font:
   # The size to use.
   size: 12
+
+  offset:
+    x: 0
+    y: 0
   # The normal (roman) font face to use.
   normal:
     family: Monaco
@@ -19,6 +23,9 @@ font:
     family: Monaco
     # Style can be specified to pick a specific face.
     style: Italic
+
+
+
 window:
   padding:
     x: 5
